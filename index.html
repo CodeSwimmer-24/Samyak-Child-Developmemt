@@ -84,20 +84,50 @@
         </div>
       </div>
       <div class="container px-0">
-        <nav class="navbar navbar-light navbar-expand-xl py-3">
-          <a href="index.html" class="navbar-brand"
-            ><h1 class="text-primary display-6">
-              Samyak <span class="text-secondary">Child Developmemt</span>
-            </h1></a
-          >
+        <nav
+          class="navbar navbar-light navbar-expand-xl py-3"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <!-- Container for logo and brand text with flex layout -->
+          <div class="d-flex align-items-center" style="width: 100%">
+            <img
+              src="./img/logo.png"
+              height="120"
+              width="120"
+              style="
+                transform: scale(1);
+                object-fit: contain;
+                max-height: 120px;
+                max-width: 120px;
+              "
+            />
+            <a
+              href="index.html"
+              class="navbar-brand mx-2"
+              style="text-align: left"
+            >
+              <h5 class="text-primary display-6" style="margin-bottom: 0">
+                Samyak <span class="text-secondary">Child Development</span>
+              </h5>
+            </a>
+          </div>
+
+          <!-- Navbar toggle button for mobile -->
           <button
             class="navbar-toggler py-2 px-3"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
+            style="border: none"
           >
             <span class="fa fa-bars text-primary"></span>
           </button>
+
+          <!-- Navbar collapse for links -->
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto">
               <a href="index.html" class="nav-item nav-link active">Home</a>
@@ -110,6 +140,7 @@
                   href="#"
                   class="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
+                  style="color: inherit"
                   >Programs</a
                 >
                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
@@ -132,6 +163,8 @@
               </div>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
+
+            <!-- Phone icon section -->
             <div class="d-flex me-4">
               <div
                 id="phone-tada"
@@ -154,6 +187,37 @@
           </div>
         </nav>
       </div>
+
+      <style>
+        /* Mobile responsiveness */
+        @media (max-width: 767px) {
+          .navbar {
+            flex-direction: column; /* Switch to column layout on mobile */
+            align-items: center; /* Center the content */
+            justify-content: center;
+          }
+
+          .navbar .navbar-brand {
+            text-align: center; /* Center the brand text */
+          }
+
+          .navbar .d-flex {
+            justify-content: center; /* Center the logo and brand text */
+            align-items: center;
+            width: 100%; /* Ensure full width for logo and text container */
+            flex-direction: column; /* Stack logo and text vertically */
+          }
+
+          .navbar-nav {
+            text-align: center; /* Center navbar links on mobile */
+            width: 100%;
+          }
+
+          .navbar-nav .nav-item {
+            display: inline-block; /* Make nav items inline-block on mobile */
+          }
+        }
+      </style>
     </div>
     <!-- Navbar End -->
 
@@ -212,8 +276,8 @@
             </h1>
             <a
               href=""
-              class="btn btn-primary text-white px-4 py-3 px-md-5 me-4 btn-border-radius"
-              >Get Started</a
+              class="btn btn-primary text-dark px-4 py-3 px-md-5 me-4 btn-border-radius"
+              >Get in Touch</a
             >
           </div>
         </div>
@@ -284,8 +348,8 @@
                   Therapy
                 </h6>
                 <h6>
-                  <i class="fas fa-check-circle me-2 text-secondary"></i>Play
-                  Therapy
+                  <i class="fas fa-check-circle me-2 text-secondary"></i>Sensory
+                  Integration
                 </h6>
               </div>
             </div>
@@ -333,112 +397,140 @@
     </div>
     <!-- About End -->
 
-    <!-- Service Start -->
-    <div class="container-fluid service pb-0">
-      <div class="container py-5">
-        <div
-          class="mx-auto text-center wow fadeIn"
-          data-wow-delay="0.1s"
-          style="max-width: 700px"
-        >
-          <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-          >
-            What We Offer
-          </h4>
-          <h1 class="mb-5 display-3">We Offer The Best Experiences For Kids</h1>
-        </div>
-        <div class="row g-5">
+    <!-- About Us 2 -->
+
+    <div class="container-fluid py-5 about bg-light">
+      <div class="container py-0">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+            <h4
+              class="text-secondary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+            >
+              Diagnosis We Cater To
+            </h4>
+            <h1 class="text-dark mb-4 display-5">
+              Comprehensive Care for Neurodevelopmental Disorders
+            </h1>
+            <p class="text-dark mb-4">
+              We specialize in diagnosing and treating a wide range of
+              conditions, including Autism Spectrum Disorder, ADHD, Learning
+              Disabilities, Sensory Processing Disorder, Cerebral Palsy, Down
+              Syndrome, and other neurological and physical disabilities. Our
+              expert team provides personalized care to support the
+              developmental and therapeutic needs of each individual, helping
+              them achieve their fullest potential.
+            </p>
+            <div class="row mb-4">
+              <div class="col-lg-6">
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2"></i>Autism Spectrum
+                  Disorder (ASD)
+                </h6>
+
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2 text-primary"></i>ADHD
+                  (Attention Deficit Hyperactivity Disorder)
+                </h6>
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2 text-secondary"></i
+                  >Learning Disabilities
+                </h6>
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2"></i>Sensory Processing
+                  Disorder
+                </h6>
+              </div>
+              <div class="col-lg-6">
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2"></i>Cerebral Palsy
+                </h6>
+                <h6 class="mb-3">
+                  <i class="fas fa-check-circle me-2 text-primary"></i>Down
+                  Syndrome
+                </h6>
+                <h6>
+                  <i class="fas fa-check-circle me-2 text-secondary"></i>Other
+                  Neurological and Physical Disabilities
+                </h6>
+              </div>
+            </div>
+            <a href="" class="btn btn-primary px-5 py-3 btn-border-radius"
+              >More Details</a
+            >
+          </div>
           <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
+            class="col-lg-5"
             data-wow-delay="0.1s"
+            style="align-items: center"
           >
-            <div
-              class="text-center border-primary border bg-white service-item"
-            >
-              <div
-                class="service-content d-flex align-items-center justify-content-center p-4"
-              >
-                <div class="service-content-inner">
-                  <div class="p-4">
-                    <img src="./img/home.png" alt="" width="80" height="80" />
-                  </div>
-                  <h6 class="h6">Home Like Environment</h6>
-                </div>
-              </div>
-            </div>
+            <img
+              src="https://wellnessstudio.co.in/wp-content/uploads/autismspectrumdisorder.png"
+              width="350px"
+              height="100px"
+              style="object-fit: contain"
+            />
+            <img
+              src="https://wellnessstudio.co.in/wp-content/uploads/adhddisorder.png"
+              width="350px"
+              height="100px"
+              style="margin-top: 15px; object-fit: contain"
+            />
+            <img
+              src="https://wellnessstudio.co.in/wp-content/uploads/downsyndrome.png"
+              width="350px"
+              style="margin-top: 15px"
+            />
+            <img
+              src="https://wellnessstudio.co.in/wp-content/uploads/cerebralpalsy.png"
+              width="350px"
+              height="100px"
+              style="margin-top: 15px; object-fit: contain"
+            />
+            <img
+              src="https://wellnessstudio.co.in/wp-content/uploads/dyslexia.png"
+              width="350px"
+              style="margin-top: 15px"
+            />
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
-            data-wow-delay="0.3s"
-          >
-            <div
-              class="text-center border-primary border bg-white service-item"
-            >
-              <div
-                class="service-content d-flex align-items-center justify-content-center p-4"
-              >
-                <div class="service-content-inner">
-                  <div class="p-4">
-                    <img src="./img/safe.png" alt="" width="80" height="80" />
-                  </div>
-                  <a href="#" class="h5">Safe and Secure</a>
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Video -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            <div
-              class="text-center border-primary border bg-white service-item"
-            >
-              <div
-                class="service-content d-flex align-items-center justify-content-center p-4"
-              >
-                <div class="service-content-inner">
-                  <div class="p-4">
-                    <img
-                      src="./img/education.png"
-                      alt=""
-                      width="80"
-                      height="80"
-                    />
-                  </div>
-                  <a href="#" class="h5">Quality Education</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
-            data-wow-delay="0.7s"
-          >
-            <div
-              class="text-center border-primary border bg-white service-item"
-            >
-              <div
-                class="service-content d-flex align-items-center justify-content-center p-4"
-              >
-                <div class="service-content-inner">
-                  <div class="p-4">
-                    <img src="./img/play.png" alt="" width="80" height="80" />
-                  </div>
-                  <a href="#" class="h5">Play To Learn</a>
-                  <!-- <p class="my-3">
-                    Through playful activities, children develop essential
-                    skills, build confidence, and engage in meaningful learning
-                    experiences that support their growth and development.
-                  </p> -->
-                </div>
-              </div>
+          <div class="modal-body">
+            <!-- 16:9 aspect ratio -->
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="embed-responsive-item"
+                src=""
+                id="video"
+                allowfullscreen
+                allowscriptaccess="always"
+                allow="autoplay"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Service End -->
+    <!-- About End -->
 
     <!-- Programs Start -->
     <div class="container-fluid program py-5">
@@ -925,216 +1017,6 @@
       </div>
     </div>
     <!-- Testimonial End -->
-
-    <!-- Blog Start-->
-    <div class="container-fluid blog py-5">
-      <div class="container py-5">
-        <div
-          class="mx-auto text-center wow fadeIn"
-          data-wow-delay="0.1s"
-          style="max-width: 600px"
-        >
-          <h4
-            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-          >
-            Latest News & Blog
-          </h4>
-          <h1 class="mb-5 display-3">Read Our Latest News & Blog</h1>
-        </div>
-        <div class="row g-5 justify-content-center">
-          <div
-            class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
-            data-wow-delay="0.1s"
-          >
-            <div class="blog-item rounded-bottom">
-              <div
-                class="blog-img overflow-hidden position-relative img-border-radius"
-              >
-                <img src="img/blog-1.jpg" class="img-fluid w-100" alt="Image" />
-              </div>
-              <div
-                class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments"
-              >
-                <small class="text-dark"
-                  ><i class="fas fa-calendar me-1 text-dark"></i> 29 Nov
-                  2023</small
-                >
-                <small class="text-dark"
-                  ><i class="fas fa-comment-alt me-1 text-dark"></i> Comments
-                  (15)</small
-                >
-              </div>
-              <div
-                class="blog-content d-flex align-items-center px-4 py-3 bg-light"
-              >
-                <div
-                  class="overflow-hidden rounded-circle rounded-top border border-primary"
-                >
-                  <img
-                    src="img/program-teacher.jpg"
-                    class="img-fluid rounded-circle p-2 rounded-top"
-                    alt="Image"
-                    style="
-                      width: 70px;
-                      height: 70px;
-                      border-style: dotted;
-                      border-color: var(--bs-primary) !important;
-                    "
-                  />
-                </div>
-                <div class="ms-3">
-                  <h6 class="text-primary">Mary Mordern</h6>
-                  <p class="text-muted">Samyak Child Developmemt</p>
-                </div>
-              </div>
-              <div class="px-4 pb-4 bg-light rounded-bottom">
-                <div class="blog-text-inner">
-                  <a href="#" class="h4">How to pay attention to your child?</a>
-                  <p class="mt-3 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec sed purus
-                  </p>
-                </div>
-                <div class="text-center">
-                  <a
-                    href="#"
-                    class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius"
-                    >View Details</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
-            data-wow-delay="0.3s"
-          >
-            <div class="blog-item rounded-bottom">
-              <div
-                class="blog-img overflow-hidden position-relative img-border-radius"
-              >
-                <img src="img/blog-2.jpg" class="img-fluid w-100" alt="Image" />
-              </div>
-              <div
-                class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments"
-              >
-                <small class="text-dark"
-                  ><i class="fas fa-calendar me-1 text-dark"></i> 29 Nov
-                  2023</small
-                >
-                <small class="text-dark"
-                  ><i class="fas fa-comment-alt me-1 text-dark"></i> Comments
-                  (15)</small
-                >
-              </div>
-              <div
-                class="blog-content d-flex align-items-center px-4 py-3 bg-light"
-              >
-                <div
-                  class="overflow-hidden rounded-circle rounded-top border border-primary"
-                >
-                  <img
-                    src="img/program-teacher.jpg"
-                    class="img-fluid rounded-circle p-2 rounded-top"
-                    alt=""
-                    style="
-                      width: 70px;
-                      height: 70px;
-                      border-style: dotted;
-                      border-color: var(--bs-primary) !important;
-                    "
-                  />
-                </div>
-                <div class="ms-3">
-                  <h6 class="text-primary">Mary Mordern</h6>
-                  <p class="text-muted"></p>
-                </div>
-              </div>
-              <div class="px-4 pb-4 bg-light rounded-bottom">
-                <div class="blog-text-inner">
-                  <a href="#" class="h4">Play outdoor sports with your child</a>
-                  <p class="mt-3 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec sed purus
-                  </p>
-                </div>
-                <div class="text-center">
-                  <a
-                    href="#"
-                    class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius"
-                    >View Details</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            <div class="blog-item rounded-bottom">
-              <div
-                class="blog-img overflow-hidden position-relative img-border-radius"
-              >
-                <img src="img/blog-3.jpg" class="img-fluid w-100" alt="Image" />
-              </div>
-              <div
-                class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments"
-              >
-                <small class="text-dark"
-                  ><i class="fas fa-calendar me-1 text-dark"></i> 29 Nov
-                  2023</small
-                >
-                <small class="text-dark"
-                  ><i class="fas fa-comment-alt me-1 text-dark"></i> Comments
-                  (15)</small
-                >
-              </div>
-              <div
-                class="blog-content d-flex align-items-center px-4 py-3 bg-light"
-              >
-                <div
-                  class="overflow-hidden rounded-circle rounded-top border border-primary"
-                >
-                  <img
-                    src="img/program-teacher.jpg"
-                    class="img-fluid rounded-circle p-2 rounded-top"
-                    alt=""
-                    style="
-                      width: 70px;
-                      height: 70px;
-                      border-style: dotted;
-                      border-color: var(--bs-primary) !important;
-                    "
-                  />
-                </div>
-                <div class="ms-3">
-                  <h6 class="text-primary">Mary Mordern</h6>
-                  <p class="text-muted">Baby Care</p>
-                </div>
-              </div>
-              <div class="px-4 pb-4 bg-light rounded-bottom">
-                <div class="blog-text-inner">
-                  <a href="#" class="h4">How to make time for your kids?</a>
-                  <p class="mt-3 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec sed purus
-                  </p>
-                </div>
-                <div class="text-center">
-                  <a
-                    href="#"
-                    class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius"
-                    >View Details</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Blog End-->
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">

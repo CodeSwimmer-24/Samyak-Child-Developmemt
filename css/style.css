@@ -238,11 +238,18 @@ h6,
   width: 100%;
   min-height: 400px;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-    url("https://kidscarehomehealth.com/wp-content/uploads/2024/05/KCHH-Occupational-Therapist.jpg");
+    url("https://jeevaniyam.in/wp-content/uploads/2022/11/ot-blog-1-1200x750.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+}
+.video2 {
+  background: url("https://www.aboutgeneticcounselors.org/Portals/0/Autism%20blog%20graphic%20diagram.JPG?ver=kfVF1MMWJ5QXc0MmxR8wTQ%3D%3D");
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  min-height: 450px;
 }
 
 .video .btn-play {
