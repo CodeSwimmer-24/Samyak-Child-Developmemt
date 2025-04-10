@@ -575,7 +575,89 @@ h6,
 /*** Blog End ***/
 
 /*** Team Start ***/
+
 .team .team-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/* Adjust Image Size */
+.team .team-item .team-img {
+  width: 150px;  /* Smaller size */
+  height: 150px; /* Keep it square */
+  object-fit: cover; /* Maintain proportions */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Social Media Icon Positioning */
+
+.team .team-item .team-icon {
+  position: absolute;
+  bottom: 90px; /* Adjusted for image size */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px; /* Add space below icons */
+}
+h1.display-3 {
+  margin-bottom: 50px; /* Increase space below heading */
+}
+
+
+
+.team .team-item .team-icon a.share-link {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.team .team-item:hover .team-icon a.share-link {
+  opacity: 1;
+}
+
+.team .team-item .team-content,
+.team .team-item .team-content h4,
+.team .team-item .team-content p {
+  transition: 0.5s;
+}
+
+.team .team-item:hover .team-content {
+  background: var(--bs-primary) !important;
+  border-radius: 0 0 10px 10px;
+}
+
+.team .team-item:hover .team-content h4 {
+  color: var(--bs-white) !important;
+}
+
+.team .team-item:hover .team-content p {
+  color: var(--bs-dark) !important;
+}
+
+
+/* Additional Styles */
+.bg-orange {
+  background-color: #FF6600;
+}
+
+.team-item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.team-img:hover {
+  transform: scale(1.1);
+}
+
+.btn-sm {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .team .team-item {
   position: relative;
   width: 100%;
   height: 100%;
@@ -614,7 +696,7 @@ h6,
 
 .team .team-item:hover .team-content p {
   color: var(--bs-dark) !important;
-}
+} */
 /*** Team end ***/
 
 /*** testimonial Start ***/
