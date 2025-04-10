@@ -35,6 +35,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    
   </head>
 
   <body>
@@ -223,30 +224,99 @@
     <!-- Page Header End -->
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5">
-      <div class="container py-5">
-        <div class="p-5 bg-light rounded">
-          <div
-            class="mx-auto text-center wow fadeIn"
-            data-wow-delay="0.1s"
-            style="max-width: 700px"
-          >
-            <h4
-              class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
-            >
-              Contact Us
-            </h4>
-            <h1 class="display-3">Contact For Any Query</h1>
-            <p class="mb-5">
-              The contact form is currently inactive. Get a functional and
-              working contact form with Ajax & PHP in a few minutes. Just copy
-              and paste the files, add a little code and you're done.
-              <a href="https://htmlcodex.com/contact-form">Download Now</a>.
-            </p>
+    <section class="hero">
+      <div class="container">
+          <div class="hero-content">
+              <h1>Get in Touch With Us</h1>
+              <p>We're here to answer any questions you may have about our services and programs for children.</p>
           </div>
-        </div>
+          <div class="hero-image">
+              <img src="https://images.unsplash.com/photo-1619512673066-88a911c72026?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkyfHxTQ0hPT0x8ZW58MHx8MHx8fDA%3D?height=300&width=400" alt="Children playing and learning">
+          </div>
       </div>
-    </div>
+  </section>
+  
+  <section class="contact-section">
+      <div class="container">
+          <div class="contact-info">
+              <h2>Contact Information</h2>
+              <div class="info-item">
+                  <div class="icon">📍</div>
+                  <p>123 Child Care Lane, Kidsville, KS 12345</p>
+              </div>
+              <div class="info-item">
+                  <div class="icon">📞</div>
+                  <p>(123) 456-7890</p>
+              </div>
+              <div class="info-item">
+                  <div class="icon">✉️</div>
+                  <p>info@childdevcentre.org</p>
+              </div>
+              <div class="info-item">
+                  <div class="icon">🕒</div>
+                  <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+              </div>
+              <div class="center-image">
+                  <img src="https://images.unsplash.com/photo-1638828200797-2699168d8bac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fENoaWxkJTIwRGV2ZWxvcG1lbnQlMjBDZW50cmV8ZW58MHx8MHx8fDA%3D?height=200&width=300" alt="Child development activities">
+              </div>
+          </div>
+          
+          <div class="contact-form">
+              <h2>Send Us a Message</h2>
+              <form id="contactForm">
+                  <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="subject">Subject:</label>
+                      <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                  </div>
+                  
+                  <button type="submit" onclick="sendmessagetowhatsapp()">Submit Message</button>
+              </form>
+          </div>
+      </div>
+  </section>
+
+  <section class="features">
+      <div class="container">
+          <h2>Why Choose Our Centre?</h2>
+          <div class="feature-cards">
+              <div class="feature-card">
+                  <img src="https://images.unsplash.com/photo-1715741281686-61eeaf709de7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fENoaWxkJTIwRGV2ZWxvcG1lbnQlMjBDZW50cmUlMjBxdWFsaWZpZWQlMjBzdGFmZnxlbnwwfHwwfHx8MA%3D%3D?height=100&width=100" alt="Qualified Staff">
+                  <h3>Qualified Staff</h3>
+                  <p>Our team consists of certified child development specialists.</p>
+              </div>
+              <div class="feature-card">
+                  <img src="https://plus.unsplash.com/premium_photo-1681842268180-1e6233379943?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2FmZSUyMGVudmlyb25tZW50JTIwZm9yJTIwY2hpbGRyZW58ZW58MHx8MHx8fDA%3D?height=70&width=100" alt="Safe Environment">
+                  <h3>Safe Environment</h3>
+                  <p>We provide a secure and nurturing space for children to learn and grow.</p>
+              </div>
+              <div class="feature-card">
+                  <img src="https://plus.unsplash.com/premium_photo-1661400028158-cdeba9bf98d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ubGl6ZWQlMjBjYXJlJTIwZm9yJTIwY2hpbGRyZW58ZW58MHx8MHx8fDA%3D?height=100&width=100" alt="Personalized Care">
+                  <h3>Personalized Care</h3>
+                  <p>Each child receives attention tailored to their unique needs.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  
+
+  
+
     <!-- Contact End -->
 
     <!-- Footer Start -->
@@ -472,6 +542,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

@@ -81,3 +81,17 @@
 
 })(jQuery);
 
+const sendmessagetowhatsapp = () =>
+    {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+        var url = "https://api.whatsapp.com/send?phone=+91 8210781959 &text=Name: " + name + "%0AEmail: " + email + "%0ASubject: " + subject + "%0AMessage: " + message;
+        if(name.length > 0 && email.length>0 && subject.length>0 && message.length>0)
+        {
+        window.open(url);
+    }else{
+        alert("Fill up the form properly")
+    }
+    }
