@@ -799,57 +799,62 @@ h6,
   }
 }
 /*** gallery section in about us page**/
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-}
+.gallery-grid {  
+  display: grid;  
+  grid-template-columns: repeat(4, 1fr);  
+  grid-template-rows: repeat(3, auto);  
+  grid-gap: 20px;  
+  max-width: 1200px;  
+  margin: 0 auto;  
+}  
 
-.gallery-item {
-  position: relative;
-  width: calc(25% - 20px);
-  margin: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-}
+.gallery-item {  
+  position: relative;  
+  overflow: hidden;  
+  border-radius: 8px;  
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+  aspect-ratio: 4/3;  
+}  
 
-.gallery-image {
-  height: 400px; /* Changed from 200px to 100% */
-  width: 100%; /* Added width: 100% */
-  object-fit: cover; /* Added object-fit: cover */
-  transition: transform 0.3s ease-in-out;
-}
+.gallery-item img {  
+  width: 100%;  
+  height: 100%;  
+  object-fit: cover;  
+  display: block;  
+  transition: transform 0.5s ease;  
+}  
+.gallery-item:hover {  
+  transform: translateY(-12px) scale(1.03);  
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);  
+  z-index: 10;  
+}  
 
+.gallery-item img {  
+  width: 100%;  
+  height: 100%;  
+  object-fit: cover;  
+  display: block;  
+  transition: transform 0.6s ease;  
+}  
 
+.gallery-item:hover img {  
+  transform: scale(1.1);  
+}  
 
-.gallery-item:hover .gallery-image {
-  transform: scale(1.1);
-}
+@media (max-width: 992px) {  
+  .gallery-grid {  
+    grid-template-columns: repeat(2, 1fr);  
+    grid-template-rows: repeat(6, auto);  
+  }  
+}  
 
-.gallery-item:hover {
-  border: 1px solid #aaa;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 576px) {
-  .gallery-item {
-    width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery-item {
-    width: 100%;
-    margin: 10px 0;
-  }
-}
-
-
-
-
+@media (max-width: 576px) {  
+  .gallery-grid {  
+    grid-template-columns: 1fr;  
+    grid-template-rows: repeat(12, auto);  
+  }  
+}  
 
 
 /***teams new css **/
