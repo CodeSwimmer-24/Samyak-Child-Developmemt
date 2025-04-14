@@ -1,9 +1,9 @@
   =>  Template Name    : Samyak Child Developmemt - Daycare Website Template
 
-  =>  Template Link    : https://htmlcodex.com/daycare-website-template
+  =>  Template Link    : https://braincraft.in/daycare-website-template
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+  =>  Template License : https://braincraft.in/license (or read the LICENSE.txt file)
 
-  =>  Template Author  : HTML Codex
+  =>  Template Author  : BrainCraft
 
-  =>  Author Website   : https://htmlcodex.com
+  =>  Author Website   : https://braincraft.in
