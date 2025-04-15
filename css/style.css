@@ -1,5 +1,6 @@
 /*** icons css ***/
 /* Fixed Social Media Icons */
+
 .social-media-fixed {
   position: fixed;
   bottom: 20px;
@@ -799,120 +800,118 @@ h6,
   }
 }
 
-
-
 /***teams new css **/
-.team-section {  
-  background-color: #f8f9fa;  
-}  
+.team-section {
+  background-color: #f8f9fa;
+}
 
-.team-member {  
-  padding: 30px;  
-  margin-bottom: 30px;  
-  background: white;  
-  border-radius: 15px;  
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);  
-  transition: all 0.3s ease;  
-}  
+.team-member {
+  padding: 30px;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
 
-.team-member:hover {  
-  transform: translateY(-10px);  
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);  
-}  
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
 
-.team-image-container {  
-  overflow: hidden;  
-  border-radius: 10px;  
-  position: relative;  
-}  
+.team-image-container {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
 
-.team-img {  
-  width: 100%;  
-  height: auto;  
-  transition: transform 0.5s ease;  
-  object-fit: cover;  
-  aspect-ratio: 1/1;  
-}  
+.team-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
 
-.team-image-container:hover .team-img {  
-  transform: scale(1.05);  
-}  
+.team-image-container:hover .team-img {
+  transform: scale(1.05);
+}
 
-.name {  
-  font-size: 2.5rem;  
-  font-weight: 700;  
-  color: #343a40;  
-  margin-bottom: 5px;  
-  position: relative;  
-  display: inline-block;  
-}  
+.name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 5px;
+  position: relative;
+  display: inline-block;
+}
 
-.name:after {  
-  content: '';  
-  position: absolute;  
-  bottom: -5px;  
-  left: 0;  
-  width: 50px;  
-  height: 3px;  
-  background: #007bff;  
-  transition: width 0.3s ease;  
-}  
+.name:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #007bff;
+  transition: width 0.3s ease;
+}
 
-.team-member:hover .name:after {  
-  width: 100%;  
-}  
+.team-member:hover .name:after {
+  width: 100%;
+}
 
-.position {  
-  font-size: 1.3rem;  
-  color: #6c757d;  
-  font-weight: 500;  
-  margin-bottom: 20px;  
-  text-transform: uppercase;  
-  letter-spacing: 1px;  
-}  
+.position {
+  font-size: 1.3rem;
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
-.bio {  
-  font-size: 1.1rem;  
-  line-height: 1.7;  
-  color: #495057;  
-}  
+.bio {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #495057;
+}
 
-@media (max-width: 768px) {  
-  .team-member {  
-    text-align: center;  
-    padding: 20px;  
-  }  
-  
-  .team-image-container {  
-    margin-bottom: 20px;  
-  }  
-  
-  .name {  
-    font-size: 2rem;  
-  }  
-  
-  .position {  
-    font-size: 1.1rem;  
-    margin-bottom: 15px;  
-  }  
-  
-  .bio {  
-    font-size: 1rem;  
-    text-align: justify;  
-  }  
-  
-  .name:after {  
-    left: 50%;  
-    transform: translateX(-50%);  
-  }  
-}  
+@media (max-width: 768px) {
+  .team-member {
+    text-align: center;
+    padding: 20px;
+  }
 
-@media (max-width: 576px) {  
-  .team-member {  
-    padding: 15px;  
-  }  
-  
-  .name {  
-    font-size: 1.8rem;  
-  }  
-}  
+  .team-image-container {
+    margin-bottom: 20px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .position {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .bio {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .name:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 576px) {
+  .team-member {
+    padding: 15px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+}
