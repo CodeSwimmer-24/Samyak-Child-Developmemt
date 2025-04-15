@@ -47,6 +47,9 @@
     scroll-behavior: smooth;
   }
 }
+html {
+  overflow-x: hidden;
+}
 body {
   overflow-x: hidden;
   margin: 0;
